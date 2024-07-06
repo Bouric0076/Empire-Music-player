@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empire Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+             <button class="back">
+                  <i class="ri-arrow-left-s-line"></i>
+             </button>
+              
+             <h3>Playing Now</h3>
+             <button class="back">
+                <i class="ri-play-list-fill"></i>
+             </button>
+        </header>
+
+        <div class="player">
+          
+              <div class="img-area">
+                <img  src="assets/Images/Empire.png" alt="">
+              </div>
+            
+              <div class="song-details">
+                   <h1 class="name">Animation</h1>
+                   <h3 class="artist">Coding</h3>
+              </div>
+
+              <div class="audioC">
+                  <div class="song-timer">
+                    <span class="current-time">0:00</span>
+                    <span class="max-duration">0:00</span>
+                  </div>
+              <div class="progress-area">
+                  <div class="progress-bar">
+                    <audio id="main-audio"  src="assets/music/empire_cast_starlight_audio_ft._serayah_mp3_71414.mp3"></audio>
+                  </div>
+                </div>
+              </div>
+
+              <div class="controls">
+                   <button class="btnC" id="prev">
+                    <i class="ri-rewind-start-fill"></i>
+                   </button>   
+                   
+                   <button class="play-pause btnC">
+                    <i class="ri-play-large-fill"></i>
+                   </button>
+
+                   <button class="btnC" id="next">
+                    <i class="ri-forward-end-fill"></i>
+                   </button>
+                 </div>
+        </div>
+    </div>
+    <script src="assets/music-list.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
